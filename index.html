@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pham Minh Hieu — Robotics &amp; Autonomous Systems</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+
+  <!-- ─── Navigation ──────────────────────────────────────────── -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">
+        <span class="bracket">&lt;</span>PhamHieu<span class="bracket">/&gt;</span>
+      </span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- ─── Hero ────────────────────────────────────────────────── -->
+  <header class="hero">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <p class="hero-eyebrow">Hello, I'm</p>
+        <h1 class="hero-name">Pham Minh Hieu</h1>
+        <h2 class="hero-title">Senior Robotics Software Engineer</h2>
+        <p class="hero-tagline">
+          7+ years building production robotics systems and autonomous platforms — from Vietnam's first Level 4 AV to scalable multi-robot fleets in Singapore.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+
+      <!-- ✏️  Replace src with your photo path, e.g. assets/photo.jpg -->
+      <div class="hero-photo-wrapper">
+        <div class="hero-photo-placeholder">
+          <img
+            src="assets/profile.jpg"
+            alt="Profile photo"
+            class="hero-photo"
+            onerror="this.parentElement.classList.add('no-image')"
+          />
+          <div class="placeholder-label">Add your photo<br /><code>assets/profile.jpg</code></div>
+        </div>
+        <div class="hero-photo-ring"></div>
+      </div>
+    </div>
+
+    <!-- animated dots grid -->
+    <canvas id="dotsCanvas" aria-hidden="true"></canvas>
+  </header>
+
+  <!-- ─── About ───────────────────────────────────────────────── -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Senior software engineer with 7+ years of experience designing and deploying production robotics systems and autonomous platforms. Expert in ROS 1/ROS 2 architecture, multi-sensor fusion, real-time control systems, and containerized deployment pipelines.
+          </p>
+          <p>
+            Proven ability to architect complex robotic solutions, lead cross-functional teams, and deliver autonomous vehicles from concept to production — including Vietnam's first Level 4 autonomous vehicle operating in real-world traffic.
+          </p>
+          <a href="assets/resume.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+            Download Resume
+          </a>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number">7+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">15+</span>
+            <span class="stat-label">Projects Delivered</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">4</span>
+            <span class="stat-label">Companies</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">2×</span>
+            <span class="stat-label">Employee of the Year</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Skills ──────────────────────────────────────────────── -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Robotics Navigation</h3>
+          <div class="skill-tags">
+            <span class="tag">ROS 1 / ROS 2</span>
+            <span class="tag">Nav2</span>
+            <span class="tag">BehaviorTree.CPP</span>
+            <span class="tag">ros2_control</span>
+            <span class="tag">ros2_canopen</span>
+            <span class="tag">VDA5050</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Autonomous Driving</h3>
+          <div class="skill-tags">
+            <span class="tag">Autoware</span>
+            <span class="tag">Apollo</span>
+            <span class="tag">CommaAI</span>
+            <span class="tag">MPPI Controller</span>
+            <span class="tag">HD Mapping</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Programming</h3>
+          <div class="skill-tags">
+            <span class="tag">C++</span>
+            <span class="tag">Python 3</span>
+            <span class="tag">C#</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">TypeScript</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Perception & AI</h3>
+          <div class="skill-tags">
+            <span class="tag">OpenCV</span>
+            <span class="tag">Keras</span>
+            <span class="tag">Sklearn</span>
+            <span class="tag">Hugging Face</span>
+            <span class="tag">SLAM</span>
+            <span class="tag">LiDAR Fusion</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Simulation</h3>
+          <div class="skill-tags">
+            <span class="tag">Gazebo Ignition</span>
+            <span class="tag">NVIDIA Isaac Sim</span>
+            <span class="tag">LGSVL</span>
+            <span class="tag">Carla</span>
+            <span class="tag">Unity</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">DevOps & Tools</h3>
+          <div class="skill-tags">
+            <span class="tag">Docker</span>
+            <span class="tag">Podman</span>
+            <span class="tag">Jenkins CI/CD</span>
+            <span class="tag">AWS</span>
+            <span class="tag">Git</span>
+            <span class="tag">Linux</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Projects ────────────────────────────────────────────── -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <!-- Project Card 1 -->
+        <article class="project-card">
+          <div class="project-img-wrap">
+            <img src="assets/project1.jpg" alt="Level 4 Autonomous Vehicle" class="project-img"
+              onerror="this.src=''; this.parentElement.classList.add('no-image')" />
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag tag-sm">Autoware</span>
+              <span class="tag tag-sm">ROS</span>
+              <span class="tag tag-sm">LiDAR</span>
+            </div>
+            <h3 class="project-title">Vietnam's First Level 4 Autonomous Vehicle</h3>
+            <p class="project-desc">
+              Pioneered autonomous driving research using Autoware and Apollo at Phenikaa Group. Deployed a fully autonomous minibus on a real-world campus, covering multi-sensor fusion (LiDAR, camera, radar, IMU, GNSS) and HD map creation with centimeter-level accuracy.
+            </p>
+            <!-- ✏️ Add an external link below, or remove this block if not needed -->
+            <div class="project-links">
+              <a href="https://phenikaa-x.com/autocar" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">External Link</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project Card 2 -->
+        <article class="project-card">
+          <div class="project-img-wrap">
+            <img src="assets/project2.jpg" alt="Multi Platform Robot Fleet" class="project-img"
+              onerror="this.src=''; this.parentElement.classList.add('no-image')" />
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag tag-sm">ROS 2</span>
+              <span class="tag tag-sm">VDA5050</span>
+              <span class="tag tag-sm">C++</span>
+            </div>
+            <h3 class="project-title">Scalable Multi Platform Robot Fleet</h3>
+            <p class="project-desc">
+              Architected a production multi-robot platform at Aumovio using ros2_control and ros2_canopen on Linux embedded systems. Supports diff drive, omni drive, and Ackermann kinematics with real-time safety compliance and VDA5050 fleet management.
+            </p>
+            <!-- ✏️ Add an external link below, or remove this block if not needed -->
+            <div class="project-links">
+              <a href="https://www.synaos.com/en/blog/logimatinteroperability-arena-showcase-for-mobile-robots" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">External Link</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project Card 3 -->
+        <article class="project-card">
+          <div class="project-img-wrap">
+            <img src="assets/project3.jpg" alt="Digital Race" class="project-img"
+              onerror="this.src=''; this.parentElement.classList.add('no-image')" />
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag tag-sm">ROS</span>
+              <span class="tag tag-sm">Ubuntu</span>
+              <span class="tag tag-sm">Unity</span>
+            </div>
+            <h3 class="project-title">Digital Race — Autonomous Vehicle Competition</h3>
+            <p class="project-desc">
+              Organized and executed FPT's Digital Race competition (Seasons 3 &amp; 4). Built competition-ready mini electric car platforms with integrated sensor suites and pre-configured ROS/Ubuntu stacks, a real-time automated scoring system, and a Unity-based physics simulation for elimination rounds.
+            </p>
+            <!-- ✏️ Add an external link below, or remove this block if not needed -->
+            <div class="project-links">
+              <a href="https://chungta.vn/cong-nghe/ban-to-chuc-cuoc-dua-so-nhan-hc-chien-cong-fpt-hang-nhat-1125954.html" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">External Link</a>
+              <a href="https://github.com/fpt-corp/DiRa" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">Github</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Experience ──────────────────────────────────────────── -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Experience &amp; Education</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">June 2023 — Present</span>
+            <h3 class="timeline-role">Robotic Software Engineer</h3>
+            <p class="timeline-org">Aumovio — Singapore</p>
+            <p class="timeline-desc">
+              Architected a scalable multi-robot platform using ros2_control + ros2_canopen compliant with the VDA5050 standard. Fine-tuned MPPI controller navigation, increasing robot speed to 1.2 m/s. Maintained Docker / Jenkins / AWS CI/CD pipelines with hardware-in-the-loop tests. Delivered PoCs at LogiMat (Mar 2026) and Sibil (Nov 2025).
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">April 2022 — May 2023</span>
+            <h3 class="timeline-role">Senior Software Engineer</h3>
+            <p class="timeline-org">Veriserve Vietnam</p>
+            <p class="timeline-desc">
+              Developed routing algorithms for Model-Based Testing from UML State Machines. Applied OpenCV and CNN-based techniques across multiple ADAS projects including autonomous car simulation, in-vehicle audio processing, and CAN bus anomaly detection.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">April 2019 — March 2022</span>
+            <h3 class="timeline-role">Technical Team Leader</h3>
+            <p class="timeline-org">Phenikaa X — Phenikaa Group</p>
+            <p class="timeline-desc">
+              Led development of Vietnam's first Level 4 autonomous vehicle using Autoware on a production minibus. Conducted multi-sensor fusion calibration (LiDAR, camera, radar, IMU, GNSS) and HD map creation. Employee of the Year 2021.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">June 2018 — April 2019</span>
+            <h3 class="timeline-role">Software Engineer</h3>
+            <p class="timeline-org">FTI — FPT</p>
+            <p class="timeline-desc">
+              Built competition-ready mini electric car platforms with ROS/Ubuntu stacks. Developed a real-time automated scoring system for autonomous vehicle racing events. Organized Digital Race Season 3 &amp; 4. Employee of the Year 2020.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Oct 2014 — May 2018</span>
+            <h3 class="timeline-role">B.Sc. Control &amp; Automation Engineering</h3>
+            <p class="timeline-org">Hanoi University of Science and Technology</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Contact ─────────────────────────────────────────────── -->
+  <section id="contact" class="section">
+    <div class="container contact-container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-intro">
+        <!-- ✏️  Edit your contact message -->
+        I'm always open to discussing new opportunities, research collaborations,
+        or just talking robots. Drop me a message!
+      </p>
+
+      <div class="contact-grid">
+        <div class="contact-links">
+          <a href="mailto:phaminhieu1996@gmail.com" class="contact-card">
+            <span class="contact-icon">✉</span>
+            <span>phaminhieu1996@gmail.com</span>
+          </a>
+          <a href="https://linkedin.com/in/pham-hieu-559385159/" class="contact-card" target="_blank" rel="noopener noreferrer">
+            <span class="contact-icon">in</span>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/finallion96/" class="contact-card" target="_blank" rel="noopener noreferrer">
+            <span class="contact-icon">&#10022;</span>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Footer ──────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Pham Minh Hieu. Built with plain HTML/CSS/JS.</p>
+      <p class="footer-sub">Deployed on GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
